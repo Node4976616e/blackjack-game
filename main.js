@@ -23,6 +23,7 @@ function startGame() {
         sum = firstCard + secondCard;
         showCards.textContent = `Cards: ${firstCard} ${secondCard} `;
         showSum.textContent = `Sum: ${sum}`;
+        checkResults();
     } else {
         alert("You haven't finished your game.");
     }
@@ -37,9 +38,13 @@ function addNewCard() {
         sum += newCard;
         showSum.textContent = `Sum: ${sum}`;
         checkResults();
-    } else {
+    } else if (hasBlackJack === true) {
+        alert("You have won, start new game.");
+        hasBlackJack = false;
+    }
+
+    else {
         alert("You have lost, start new game.");
-        newGame = false;
 
     }
 }
@@ -53,6 +58,7 @@ function checkResults() {
         newGame = false;
     } else {
         message = "You've lost!";
+
         newGame = false;
     }
     showMessage.textContent = message;
