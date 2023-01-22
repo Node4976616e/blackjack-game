@@ -1,0 +1,49 @@
+body {
+    background-image: url("images/linen-texture-green.jpg");
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading h1 {
+    color: goldenrod;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+button {
+    font-size: 1.5rem;
+    min-width: 50%;
+    background-color: goldenrod;
+    color: #016f32;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(218, 165, 32, 0.616);
+}
+
+.container {
+    max-width: 70vh;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
